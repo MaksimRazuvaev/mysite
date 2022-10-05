@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Maksim Razuvaev"/>
+		<meta name="Keywords" content="Guestbook"/>
+		<meta name="Description" content="My website guest welcome to leave info about yourself"/>
+		<meta http-equiv="refresh" content="300">
+		<meta name="robots" content="noimageindex, nofollow, nosnippet"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/myStyle.css"/>
+		<title>Guestbook Page - Maksim Razuvaev</title>
+		<style>
+		form {
+		font-size: 160%;
+		margin-bottom: 25px;
+		margin-top:25px;
+		margin-left: 25px;
+		margin-right:25px;
+		}
+		img {
+		width: 100%;
+		height: auto;
+		}
+		</style>
+	</head>
+		
+	<body>
+	
+<!-- HEADER -->
+		<header>
+		<br/><br/>
+		<div class="topnav">
+			 <a href="../home.html">Home</a>
+			 <a href="../html/resume.html">Resume</a>
+			 <a href="../html/interest.html">Interests</a>
+			 <a href="../html/reflections.html">Reflections</a>
+			 <a href="../html/guestbook.html">Guestbook</a>
+		</div>
+		<br/><br/>
+		<img src="../images/download.jfif" alt="Picture with nature" class="center">
+		</header>
+	
+<!-- ARTICLE -->
+		<article>	
+			<h1>Maksim Razuvaev Guestbook</h1>
+			
+			<form
+			style="color:#336699;"
+			method="post"
+			action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+			Enter Your Name: <input type="text" name="Name" size="40"/>
+				<br/>
+				Enter Your E-mail: <input type="text" name="Email" size="40"/>
+				<br/>
+				What country do you live in?
+				<input type="text" name="country" size="40">
+				<br/>
+				Enter Your Website Address: <input type="text" name="Website" size="40" value="http://"/>
+				<br/>
+				Should we add you to our mailing list?
+				<input type="checkbox" name="mailinglist"/><br/>
+				<br/>
+				What is your experience as Web Developer:<br/>
+				<input type="radio" name="web_experience" value="None"/>None<br/>
+				<input type="radio" name="web_experience" value="Beginer" checked="checked"/>Beginner<br/>
+				<input type="radio" name="web_experience" value="Immediate"/>Immediate<br/>
+				<input type="radio" name="web_experience" value="Advanced"/>Advanced<br/>
+				<br/>
+				What web technologies are you interested in?? (check all that
+				apply):<br/>
+				<select name="interests" multiple="multiple" size="6">
+					<option>HTML</option>
+					<option>CSS</option>
+					<option>JavaScript</option>
+					<option>AJAX</option>
+					<option>SQL</option>
+					<option>PHP</option>
+				</select>
+				<br/>
+				How did you find my website?
+				<br/>
+				<select name="website">
+					<option>Select one</option>
+					<option>I'm a friend</option>
+					<option>Just surfed in!</option>
+					<option>Word of mouth</option>
+					<option>By search engine</option>
+					<option>A friend sent me</option>
+					<option>Other</option>
+				</select>
+				<br/>
+				Comments:<br/>
+				<textarea name="comments" cols="50" rows="6">
+				Enter your message here.
+				</textarea>
+				<br/>
+				<input type="submit"/>
+				<input type="reset"/>
+			</form>
+		</article>
+		
+		<!-- FOOTER -->	
+		<footer>
+			<div class="footernav">
+				<a href="index.html">Home</a>
+				<a href="resume.html">Resume</a>
+				<a href="interest.html">Interests</a>
+				<a href="reflections.html">Reflections</a>
+				<a href="guestbook.html">Guestbook</a>
+			</div>
+		</footer>
+	</body>
+</html>
